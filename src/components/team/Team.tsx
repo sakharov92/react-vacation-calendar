@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import './Team.css';
 import {ITeam} from "../../Interfaces/team";
 import {Data} from "../../Interfaces/data"
+import {isWeekend} from "date-fns";
 
 
 export const Team: React.FC<{ team: ITeam, date: Date, dataList: Data }> = ({team, date, dataList}) => {
@@ -9,7 +10,6 @@ export const Team: React.FC<{ team: ITeam, date: Date, dataList: Data }> = ({tea
     useEffect(() => {
         setDaysArray([].constructor(date.getDate()).fill(""));
     }, [date])
-    console.log(dataList.users)
 
     return (<tbody>
         <tr className="mainRow">
@@ -26,19 +26,23 @@ export const Team: React.FC<{ team: ITeam, date: Date, dataList: Data }> = ({tea
                     </div>
                 </div>
             </td>
-            {daysArray.map((e: string, index: number) => <td key={"" + new Date() + index}/>)}
+            {daysArray.map((e: string, index: number) => <td className="teamInfo" key={"" + new Date() + index}/>)}
             <td className="teamInfo"/>
         </tr>
         {
             dataList.users.map((user, index) => {
                 if (user.teamId === team.id) {
-                    return (<tr>
+                    console.log(user)
+                    return (<tr className="employeeКRow" key={"" + new Date() + index}>
                             <td>{user.name}</td>
-                            {daysArray.map((e: string, index: number) => <td key={"" + new Date() + index}/>)}
+                            {daysArray.map((e: string, index: number) => <td className={
+                                (isWeekend(new Date(date).setDate(index + 1))) ? "weekend" : ""}
+                                                                             key={"" + new Date() + index}/>)}
                             <td/>
                         </tr>
                     )
                 }
+                return null
             })
         }
 
