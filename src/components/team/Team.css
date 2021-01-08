@@ -1,0 +1,130 @@
+td {
+	border: 1px solid #D7D7D7;
+}
+
+.teamInfo span {
+	color: #949494;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.fa-users {
+	font-size: 12px;
+	color: #949494;
+	margin-right: -5px;
+}
+
+tbody tr {
+	height: 33px;
+}
+
+.mainRow:last-child {
+	background: #F3F3F3;
+}
+
+.teamInfo {
+	padding: 0px 8px 0px;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 14px;
+	background: rgba(155, 153, 255, 0.1);
+}
+
+.teamInfo__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.teamInfo__name {
+	width: 200px;
+	padding: 0px 10px;
+}
+
+.teamInfo__block {
+	flex: 0 0 auto;
+	width: fit-content;
+}
+
+.teamInfo__block .fas {
+	margin-top: 0px;
+	margin-right: 15px;
+}
+
+.teamInfo__block .chevronBtn {
+	font-size: 10px;
+	padding: 5px;
+}
+
+.teamInfo__block button {
+	background-color: transparent;
+}
+
+.teamInfo span {
+	color: #949494;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.percent {
+	padding: 0px 4px;
+	font-size: 12px;
+	line-height: 1.2rem;
+	color: #fff;
+	border-radius: 2px;
+	display: inline-block;
+	min-width: 24px;
+	margin: 0px 13px;
+}
+
+.FRONT_END .mainRow td {
+	background: rgba(155, 153, 255, 0.1);
+}
+
+.DESIGNER .mainRow td {
+	background: rgba(122, 175, 255, 0.1);
+}
+
+.BACK_END .mainRow td {
+	background: rgba(255, 153, 153, 0.1);
+}
+
+
+.FRONT_END .percent {
+	background: #9b99ff;
+}
+
+.DESIGNER .percent {
+	background: #7aafff;
+}
+
+.BACK_END .percent {
+	background: #ff9999;
+}
+
+
+.mainRow.FRONT_END {
+	border-left: 3px solid #9b99ff;
+}
+
+.mainRow.DESIGNER {
+	border-left: 3px solid #7aafff;
+}
+
+.mainRow.BACK_END {
+	border-left: 3px solid #ff9999;
+}
+
+
+.hide {
+	display: none;
+}
+
+.rotateChevron {
+	transform: rotateX(180deg);
+}
+tbody:after {
+	height: 33px;
+	display: table-row;
+	content: '';
+}

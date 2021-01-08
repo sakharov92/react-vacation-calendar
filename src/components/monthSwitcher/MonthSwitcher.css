@@ -1,0 +1,13 @@
+.month-switcher {
+	width: 230px;
+	display: flex;
+	justify-content: space-between;
+	margin: 30px;
+}
+.month-switcher__month{
+	padding: 10px;
+}
+.month-switcher__btn {
+	background-color: transparent;
+	padding: 10px;
+}
