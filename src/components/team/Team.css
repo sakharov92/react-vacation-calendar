@@ -15,7 +15,7 @@ td {
 }
 
 tbody tr {
-	height: 33px;
+	height: 35px;
 }
 
 .mainRow:last-child {
@@ -75,6 +75,7 @@ tbody tr {
 	display: inline-block;
 	min-width: 24px;
 	margin: 0px 13px;
+	text-align: center;
 }
 
 .FRONT_END .mainRow td {
@@ -128,3 +129,12 @@ tbody:after {
 	display: table-row;
 	content: '';
 }
+
+.employeeКRow td:first-child{
+	padding-left: 15px;
+}
+
+
+
+
+

@@ -2,15 +2,20 @@ import React, {useEffect, useState} from "react";
 import './Team.css';
 import {ITeam} from "../../Interfaces/team";
 import {Data} from "../../Interfaces/data"
-import {isWeekend} from "date-fns";
+import {User} from '../user/User'
 
 
 export const Team: React.FC<{ team: ITeam, date: Date, dataList: Data }> = ({team, date, dataList}) => {
     const [daysArray, setDaysArray] = useState([].constructor(date.getDate()))
+    let usersInCurrentTeam = 0;
     useEffect(() => {
         setDaysArray([].constructor(date.getDate()).fill(""));
     }, [date])
-
+    dataList.users.forEach((item) => {
+        if (item.teamId === team.id) {
+            usersInCurrentTeam++;
+        }
+    })
     return (<tbody>
         <tr className="mainRow">
             <td className="teamInfo">
@@ -18,8 +23,8 @@ export const Team: React.FC<{ team: ITeam, date: Date, dataList: Data }> = ({tea
                     <p className="teamInfo__name">{team.name}</p>
                     <div className="teamInfo__block">
                         <i className="fas fa-users"/>
-                        <span>{team.percentageOfAbsent[date.getMonth()]}%</span>
-                        <div className="percent">{}</div>
+                        <span>{usersInCurrentTeam}</span>
+                        <div className="percent">{team.percentageOfAbsent[date.getMonth()]}%</div>
                         <button>
                             <i className="fas chevronBtn fa-chevron-up"/>
                         </button>
@@ -32,20 +37,11 @@ export const Team: React.FC<{ team: ITeam, date: Date, dataList: Data }> = ({tea
         {
             dataList.users.map((user, index) => {
                 if (user.teamId === team.id) {
-                    console.log(user)
-                    return (<tr className="employeeКRow" key={"" + new Date() + index}>
-                            <td>{user.name}</td>
-                            {daysArray.map((e: string, index: number) => <td className={
-                                (isWeekend(new Date(date).setDate(index + 1))) ? "weekend" : ""}
-                                                                             key={"" + new Date() + index}/>)}
-                            <td/>
-                        </tr>
-                    )
+                    return <User key={"" + new Date() + index} date={date} user={user} dataList={dataList}/>
                 }
                 return null
             })
         }
-
         </tbody>
     )
 }

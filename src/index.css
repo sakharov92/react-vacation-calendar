@@ -19,39 +19,39 @@ button {
 	outline: none;
 }
 
-app-table-body:nth-child(2) .employeeКRow,
-app-table-body:nth-child(2) .mainRow {
+tbody:nth-child(2) .employeeКRow,
+tbody:nth-child(2) .mainRow {
 	border-left: 3px solid rgb(155, 153, 255);
 }
 
-app-table-body:nth-child(3) .employeeКRow,
-app-table-body:nth-child(3) .mainRow {
+tbody:nth-child(3) .employeeКRow,
+tbody:nth-child(3) .mainRow {
 	border-left: 3px solid rgb(122, 175, 255);
 }
 
-app-table-body:nth-child(4) .employeeКRow,
-app-table-body:nth-child(4) .mainRow {
+tbody:nth-child(4) .employeeКRow,
+tbody:nth-child(4) .mainRow {
 	border-left: 3px solid rgb(255, 153, 153);
 }
 
-app-table-body:nth-child(5) .employeeКRow,
-app-table-body:nth-child(5) .mainRow {
+tbody:nth-child(5) .employeeКRow,
+tbody:nth-child(5) .mainRow {
 	border-left: 3px solid rgb(255, 167, 104);
 }
 
-app-table-body:nth-child(2) .percent {
+tbody:nth-child(2) .percent {
 	background-color: rgb(155, 153, 255);
 }
 
-app-table-body:nth-child(3) .percent {
+tbody:nth-child(3) .percent {
 	background-color: rgb(122, 175, 255);
 }
 
-app-table-body:nth-child(4) .percent {
+tbody:nth-child(4) .percent {
 	background-color: rgb(255, 153, 153);
 }
 
-app-table-body:nth-child(5) .percent {
+tbody:nth-child(5) .percent {
 	background-color: rgb(255, 167, 104);
 }
 
@@ -70,17 +70,21 @@ app-table-body:nth-child(5) .percent {
 	content: '';
 	display: block;
 	position: relative;
-	min-width: 33.64px;
+	min-width: 43.64px;
 	min-height: 24px;
-	top: 5px;
+	margin-left: -2px;
+	margin-right: -2px;
+	margin-top: -10px;
 }
 
 .vacation-cell_ui-start:before {
-	left: 2px;
+	left: 4px;
+	margin-left: 1px;
 }
 
 .vacation-cell_ui-end:before {
-	right: 2px;
+	right: 4px;
+	margin-right: 1px;
 }
 
 .vacation-cell_paid:before,
@@ -117,71 +121,71 @@ app-table-body:nth-child(5) .percent {
 	border-radius: 3px;
 }
 
-app-table-body:nth-child(2) .vacation-cell_paid:before {
+tbody:nth-child(2) .vacation-cell_paid:before {
 	background-color: rgb(155, 153, 255);
 }
 
-app-table-body:nth-child(2) .vacation-cell_unpaid:before {
+tbody:nth-child(2) .vacation-cell_unpaid:before {
 	background-color: rgba(155, 153, 255, .1);
 }
 
-app-table-body:nth-child(2) .vacation-cell_paid:before,
-app-table-body:nth-child(2) .vacation-cell_unpaid:before {
+tbody:nth-child(2) .vacation-cell_paid:before,
+tbody:nth-child(2) .vacation-cell_unpaid:before {
 	border-color: rgb(155, 153, 255);
 }
 
-app-table-body:nth-child(3) .vacation-cell_paid:before {
+tbody:nth-child(3) .vacation-cell_paid:before {
 	background-color: rgb(122, 175, 255);
 }
 
-app-table-body:nth-child(3) .vacation-cell_unpaid:before {
+tbody:nth-child(3) .vacation-cell_unpaid:before {
 	background-color: rgba(122, 175, 255, .1);
 }
 
-app-table-body:nth-child(3) .vacation-cell_paid:before,
-app-table-body:nth-child(3) .vacation-cell_unpaid:before {
+tbody:nth-child(3) .vacation-cell_paid:before,
+tbody:nth-child(3) .vacation-cell_unpaid:before {
 	border-color: rgb(122, 175, 255);
 }
 
-app-table-body:nth-child(4) .vacation-cell_paid:before {
+tbody:nth-child(4) .vacation-cell_paid:before {
 	background-color: rgb(255, 153, 153);
 }
 
-app-table-body:nth-child(4) .vacation-cell_unpaid:before {
+tbody:nth-child(4) .vacation-cell_unpaid:before {
 	background-color: rgba(255, 153, 153, .1);
 }
 
-app-table-body:nth-child(4) .vacation-cell_paid:before,
-app-table-body:nth-child(4) .vacation-cell_unpaid:before {
+tbody:nth-child(4) .vacation-cell_paid:before,
+tbody:nth-child(4) .vacation-cell_unpaid:before {
 	border-color: rgb(255, 153, 153);
 }
 
-app-table-body:nth-child(5) .vacation-cell_paid:before {
+tbody:nth-child(5) .vacation-cell_paid:before {
 	background-color: rgb(255, 167, 104);
 }
 
-app-table-body:nth-child(5) .vacation-cell_unpaid:before {
+tbody:nth-child(5) .vacation-cell_unpaid:before {
 	background-color: rgba(255, 167, 104, .1);
 }
 
-app-table-body:nth-child(5) .vacation-cell_paid:before,
-app-table-body:nth-child(5) .vacation-cell_unpaid:before {
+tbody:nth-child(5) .vacation-cell_paid:before,
+tbody:nth-child(5) .vacation-cell_unpaid:before {
 	border-color: rgb(255, 167, 104);
 }
 
-app-table-body:nth-child(2) .vacation-cell_unpaid.vacation-cell_type-text:after {
+tbody:nth-child(2) .vacation-cell_unpaid.vacation-cell_type-text:after {
 	color: rgb(155, 153, 255);
 }
 
-app-table-body:nth-child(3) .vacation-cell_unpaid.vacation-cell_type-text:after {
+tbody:nth-child(3) .vacation-cell_unpaid.vacation-cell_type-text:after {
 	color: rgb(122, 175, 255);
 }
 
-app-table-body:nth-child(4) .vacation-cell_unpaid.vacation-cell_type-text:after {
+tbody:nth-child(4) .vacation-cell_unpaid.vacation-cell_type-text:after {
 	color: rgb(255, 153, 153);
 }
 
-app-table-body:nth-child(5) .vacation-cell_unpaid.vacation-cell_type-text:after {
+tbody:nth-child(5) .vacation-cell_unpaid.vacation-cell_type-text:after {
 	color: rgb(255, 167, 104);
 }
 
@@ -263,7 +267,7 @@ td {
 	font-weight: normal;
 }
 
-app-table-body:after {
+tbody:after {
 	height: 33px;
 	display: table-row;
 	content: '';
@@ -296,39 +300,39 @@ button {
 	outline: none;
 }
 
-app-table-body:nth-child(2) .employeeКRow,
-app-table-body:nth-child(2) .mainRow {
+tbody:nth-child(2) .employeeКRow,
+tbody:nth-child(2) .mainRow {
 	border-left: 3px solid rgb(155, 153, 255);
 }
 
-app-table-body:nth-child(3) .employeeКRow,
-app-table-body:nth-child(3) .mainRow {
+tbody:nth-child(3) .employeeКRow,
+tbody:nth-child(3) .mainRow {
 	border-left: 3px solid rgb(122, 175, 255);
 }
 
-app-table-body:nth-child(4) .employeeКRow,
-app-table-body:nth-child(4) .mainRow {
+tbody:nth-child(4) .employeeКRow,
+tbody:nth-child(4) .mainRow {
 	border-left: 3px solid rgb(255, 153, 153);
 }
 
-app-table-body:nth-child(5) .employeeКRow,
-app-table-body:nth-child(5) .mainRow {
+tbody:nth-child(5) .employeeКRow,
+tbody:nth-child(5) .mainRow {
 	border-left: 3px solid rgb(255, 167, 104);
 }
 
-app-table-body:nth-child(2) .percent {
+tbody:nth-child(2) .percent {
 	background-color: rgb(155, 153, 255);
 }
 
-app-table-body:nth-child(3) .percent {
+tbody:nth-child(3) .percent {
 	background-color: rgb(122, 175, 255);
 }
 
-app-table-body:nth-child(4) .percent {
+tbody:nth-child(4) .percent {
 	background-color: rgb(255, 153, 153);
 }
 
-app-table-body:nth-child(5) .percent {
+tbody:nth-child(5) .percent {
 	background-color: rgb(255, 167, 104);
 }
 
@@ -394,71 +398,71 @@ app-table-body:nth-child(5) .percent {
 	border-radius: 3px;
 }
 
-app-table-body:nth-child(2) .vacation-cell_paid:before {
+tbody:nth-child(2) .vacation-cell_paid:before {
 	background-color: rgb(155, 153, 255);
 }
 
-app-table-body:nth-child(2) .vacation-cell_unpaid:before {
+tbody:nth-child(2) .vacation-cell_unpaid:before {
 	background-color: rgba(155, 153, 255, .1);
 }
 
-app-table-body:nth-child(2) .vacation-cell_paid:before,
-app-table-body:nth-child(2) .vacation-cell_unpaid:before {
+tbody:nth-child(2) .vacation-cell_paid:before,
+tbody:nth-child(2) .vacation-cell_unpaid:before {
 	border-color: rgb(155, 153, 255);
 }
 
-app-table-body:nth-child(3) .vacation-cell_paid:before {
+tbody:nth-child(3) .vacation-cell_paid:before {
 	background-color: rgb(122, 175, 255);
 }
 
-app-table-body:nth-child(3) .vacation-cell_unpaid:before {
+tbody:nth-child(3) .vacation-cell_unpaid:before {
 	background-color: rgba(122, 175, 255, .1);
 }
 
-app-table-body:nth-child(3) .vacation-cell_paid:before,
-app-table-body:nth-child(3) .vacation-cell_unpaid:before {
+tbody:nth-child(3) .vacation-cell_paid:before,
+tbody:nth-child(3) .vacation-cell_unpaid:before {
 	border-color: rgb(122, 175, 255);
 }
 
-app-table-body:nth-child(4) .vacation-cell_paid:before {
+tbody:nth-child(4) .vacation-cell_paid:before {
 	background-color: rgb(255, 153, 153);
 }
 
-app-table-body:nth-child(4) .vacation-cell_unpaid:before {
+tbody:nth-child(4) .vacation-cell_unpaid:before {
 	background-color: rgba(255, 153, 153, .1);
 }
 
-app-table-body:nth-child(4) .vacation-cell_paid:before,
-app-table-body:nth-child(4) .vacation-cell_unpaid:before {
+tbody:nth-child(4) .vacation-cell_paid:before,
+tbody:nth-child(4) .vacation-cell_unpaid:before {
 	border-color: rgb(255, 153, 153);
 }
 
-app-table-body:nth-child(5) .vacation-cell_paid:before {
+tbody:nth-child(5) .vacation-cell_paid:before {
 	background-color: rgb(255, 167, 104);
 }
 
-app-table-body:nth-child(5) .vacation-cell_unpaid:before {
+tbody:nth-child(5) .vacation-cell_unpaid:before {
 	background-color: rgba(255, 167, 104, .1);
 }
 
-app-table-body:nth-child(5) .vacation-cell_paid:before,
-app-table-body:nth-child(5) .vacation-cell_unpaid:before {
+tbody:nth-child(5) .vacation-cell_paid:before,
+tbody:nth-child(5) .vacation-cell_unpaid:before {
 	border-color: rgb(255, 167, 104);
 }
 
-app-table-body:nth-child(2) .vacation-cell_unpaid.vacation-cell_type-text:after {
+tbody:nth-child(2) .vacation-cell_unpaid.vacation-cell_type-text:after {
 	color: rgb(155, 153, 255);
 }
 
-app-table-body:nth-child(3) .vacation-cell_unpaid.vacation-cell_type-text:after {
+tbody:nth-child(3) .vacation-cell_unpaid.vacation-cell_type-text:after {
 	color: rgb(122, 175, 255);
 }
 
-app-table-body:nth-child(4) .vacation-cell_unpaid.vacation-cell_type-text:after {
+tbody:nth-child(4) .vacation-cell_unpaid.vacation-cell_type-text:after {
 	color: rgb(255, 153, 153);
 }
 
-app-table-body:nth-child(5) .vacation-cell_unpaid.vacation-cell_type-text:after {
+tbody:nth-child(5) .vacation-cell_unpaid.vacation-cell_type-text:after {
 	color: rgb(255, 167, 104);
 }
 
@@ -540,8 +544,3 @@ td {
 	font-weight: normal;
 }
 
-app-table-body:after {
-	height: 33px;
-	display: table-row;
-	content: '';
-}
