@@ -1,3 +1,116 @@
-.vacationSum{
+.vacationSum {
 	text-align: center;
+}
+
+.vacation-cell_paid:before,
+.vacation-cell_unpaid:before {
+	content: '';
+	display: block;
+	position: relative;
+	min-height: 24px;
+	margin-left: -2px;
+	margin-right: -2px;
+	margin-top: -10px;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+	min-width: 33.64px;
+	top: 5px;
+}
+
+.vacation-cell_ui-start:before {
+	left: 4px;
+	margin-left: 1px;
+}
+
+.vacation-cell_ui-end:before {
+	right: 4px;
+	margin-right: 1px;
+}
+
+.vacation-cell_paid:before,
+.vacation-cell_unpaid:before {
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+}
+
+.vacation-cell_unpaid.vacation-cell_type-text:after {
+	content: 'UnPd';
+}
+
+.vacation-cell_paid.vacation-cell_type-text:after {
+	content: 'Pd';
+	color: #fff;
+}
+
+.vacation-cell_type-text:after {
+	position: absolute;
+	color: #000;
+	font-size: 12px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	top: 10px;
+	left: 0;
+	z-index: 1;
+}
+
+.vacation-cell_unpaid.vacation-cell_type-text_left_s:after {
+	left: 4px;
+}
+
+.vacation-cell_unpaid.vacation-cell_type-text_left_l:after {
+	left: 26px;
+}
+
+.vacation-cell_paid.vacation-cell_type-text_left_s:after {
+	left: 12px;
+}
+
+.vacation-cell_paid.vacation-cell_type-text_left_l:after {
+	left: 33px;
+}
+
+.vacation-cell_paid {
+	border-right: none;
+	border-left: none;
+}
+
+
+.vacation-cell_ui-start:before {
+	left: 2px;
+}
+
+.vacation-cell_ui-end:before {
+	right: 2px;
+}
+
+.vacation-cell_paid.vacation-cell_ui-start:before,
+.vacation-cell_unpaid.vacation-cell_ui-start:before {
+	
+	border-radius: 3px 0 0 3px;
+}
+
+.vacation-cell_paid.vacation-cell_ui-end:before,
+.vacation-cell_unpaid.vacation-cell_ui-end:before {
+	border-radius: 0 3px 3px 0;
+}
+
+.vacation-cell_unpaid.vacation-cell_ui-start:before,
+.vacation-cell_paid.vacation-cell_ui-start:before {
+	border-left: 1px solid transparent;
+}
+
+.vacation-cell_unpaid.vacation-cell_ui-end:before,
+.vacation-cell_paid.vacation-cell_ui-end:before {
+	border-right: 1px solid transparent;
+}
+
+.vacation-cell_ui-start.vacation-cell_ui-end:before {
+	max-width: 34px;
+	left: 1px;
+	border-radius: 3px;
+}
+
+.dayCell {
+	min-width: 33.64px;
+	position: relative;
 }

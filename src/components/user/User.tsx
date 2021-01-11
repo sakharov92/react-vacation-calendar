@@ -4,28 +4,32 @@ import {IUser} from "../../Interfaces/user";
 import {CellInfo} from "../../Interfaces/day";
 import {AvailableDates, Vacation} from '../../Interfaces/vacation';
 import {vacationService} from "../../services/vacationService";
-import {statisticService} from "../../services/statisticService";
 import "./User.css"
 import {Data} from "../../Interfaces/data";
+import {statisticService} from "../../services/statisticService";
 
-export const User: React.FC<{ date: Date, user: IUser, dataList: Data }> = ({date, user, dataList}) => {
-    const userId: number = user.id;
-    const lastDayOfMonth: Date = date;
+const UserComponent: React.FC<{
+    date: Date, user: IUser, dataList: Data
+}> = ({date, user, dataList}) => {
     let dayCells: CellInfo[] = [];
     let vacationSum: number = 0;
     let vacations: Vacation[] = dataList.vacations;
-    let teamStatisticList: (string | number)[] = statisticService.fillStatisticsList(date);
+    let teamStatisticList = statisticService.fillStatisticsList(date);
     const fillDayCells = (userId: number, lastDayOfMonth: Date): CellInfo[] => {
         const vacationsFiltered: AvailableDates[] = vacationService.generateVacationSetsByUserId(userId, lastDayOfMonth, vacations);
+
         for (let i = 1; i <= lastDayOfMonth.getDate(); i++) {
             const iDate: Date = new Date(lastDayOfMonth.getFullYear(), lastDayOfMonth.getMonth(), i);
             const cellInfo: CellInfo = getCellInfo(iDate, vacationsFiltered);
             if (cellInfo.isVacation && !cellInfo.isWeekend) {
                 teamStatisticList = statisticService.updateStatistic(i - 1, teamStatisticList);
                 increaseVacationSumByOne();
+
             }
+
             dayCells.push(cellInfo);
         }
+        // console.log(teamStatisticList)
         addVacationInfoText(dayCells);
         return dayCells;
     }
@@ -47,8 +51,8 @@ export const User: React.FC<{ date: Date, user: IUser, dataList: Data }> = ({dat
             isLeftS: false
         };
         for (const vacationItem of vacationsFiltered) {
-            // @ts-ignore
-            const vacationItemEntries = [...vacationItem.availableDatesList];
+            const vacationItemEntries = Array.from(vacationItem.availableDatesList);
+
             const vacationUiStart = vacationItemEntries[0];
             const vacationUiEnd = vacationItemEntries[vacationItemEntries.length - 1];
             if (vacationItem.availableDatesList.has(cellDate)) {
@@ -111,12 +115,18 @@ export const User: React.FC<{ date: Date, user: IUser, dataList: Data }> = ({dat
         }
         return classesString;
     }
-    dayCells = fillDayCells(userId, lastDayOfMonth);
+
+
+    fillDayCells(user.id, date);
+
+
     return <tr className="employeeКRow">
         <td>{user.name}</td>
-        {dayCells.map((e: CellInfo, index: number) => <td className={calculateClasses(e)}
-                                                          key={"" + new Date() + index}/>
-        )}
+        {
+            dayCells.map((e: CellInfo, index: number) => <td className={calculateClasses(e)}
+                                                             key={"" + new Date() + index}/>
+            )}
         <td className="weekend vacationSum">{vacationSum}</td>
     </tr>
 }
+export const User = React.memo(UserComponent);
