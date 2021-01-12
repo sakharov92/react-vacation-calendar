@@ -1,92 +1,115 @@
-
 table {
-	border-collapse: collapse;
+  border-collapse: collapse;
 }
 
 td {
-	border: 1px solid #D7D7D7;
+  border: 1px solid #d7d7d7;
 }
 
 .weekend {
-	background: #F0F0F0;
+  background: #f0f0f0;
 }
 
 .outputItem {
-	height: 44px;
-	width: 25px;
-	text-align: center;
-	align-items: center;
-	line-height: 28px;
-	border: 1px solid rgb(192, 192, 192);
-	padding: 5px;
+  height: 44px;
+  width: 25px;
+  text-align: center;
+  align-items: center;
+  line-height: 28px;
+  border: 1px solid rgb(192, 192, 192);
+  padding: 5px;
 }
 
 .addVacationCell {
-	max-width: fit-content;
-	padding: 0 100px 20px 0;
-	margin: 0;
-	border-top: none;
-	border-left: none;
+  max-width: fit-content;
+  padding: 0 100px 20px 0;
+  margin: 0;
+  border-top: none;
+  border-left: none;
 }
 
 .outputDay {
-	display: inline-block;
-	padding: 5.4px;
-	text-align: center;
-	color: #000;
-	font-size: 12px;
-	line-height: 18px;
+  display: inline-block;
+  padding: 5.4px;
+  text-align: center;
+  color: #000;
+  font-size: 12px;
+  line-height: 1.5;
 }
 
 .outputDate {
-	text-align: center;
-	color: #000;
-	font-size: 14;
-	font-weight: 600;
-	line-height: 21px;
+  text-align: center;
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
 }
 
 .sumCell {
-	font-size: 12px;
-	line-height: 18px;
-	max-width: fit-content;
+  font-size: 12px;
+  line-height: 18px;
+  max-width: fit-content;
 }
 
 .addVacationBtn {
-	width: 144px;
-	height: 40px;
-	background: #48BA46;
-	border-radius: 7px;
-	border: none;
-	color: #fff;
-	font-size: 14px;
-	line-height: 21px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  width: 144px;
+  height: 40px;
+  border-radius: 7px;
+  background-color: #48ba46;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 23px;
+  transition: all linear 0.2s;
+  border: none;
+  color: #fff;
 }
 
-.addVacationBtn span {
-	font-size: 24px;
-	padding-right: 10px;
+.addVacationBtn::before,
+.addVacationBtn::after {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+}
+
+.addVacationBtn::before {
+  transform: rotate(90deg);
+}
+
+.addVacationBtn:hover {
+  background-color: #32a830;
+}
+
+.addVacationBtn:focus {
+  border: none;
+  outline: none;
 }
 
 .outputItem__wrapper {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .calendar__text {
-	padding: 2px;
+  padding: 2px;
 }
 
 app-table-body {
-	display: table-row-group;
+  display: table-row-group;
 }
 
-.innerWrapperDayItem{
-	display: flex;
-	flex-direction: column;
+.innerWrapperDayItem {
+  display: flex;
+  flex-direction: column;
 }
-

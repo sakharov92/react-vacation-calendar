@@ -35,7 +35,8 @@ const TeamComponent: React.FC<{
                         <span>{usersInCurrentTeam}</span>
                         <div className="percent">{team.percentageOfAbsent[date.getMonth()]}%</div>
                         <button onClick={hideTeam}>
-                            <i className={isTeamHide ? "fas chevronBtn fa-chevron-up rotate" : "fas chevronBtn fa-chevron-up"}/>
+                            {<i className={isTeamHide ? "arrow-show" : "arrow-hide"}/>}
+                             
                         </button>
                     </div>
                 </div>
