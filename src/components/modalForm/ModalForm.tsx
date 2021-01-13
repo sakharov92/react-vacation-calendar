@@ -20,9 +20,9 @@ export const ModalForm: React.FC<{
                 setDateFromString(dateToString);
                 setDateToString(dateFrom);
                 difference = -difference;
-                setDaysOff(difference + " days");
+                setDaysOff(difference + " Days");
             } else {
-                setDaysOff(difference + " days");
+                setDaysOff(difference + " Days");
             }
         }
     }, [dateToString, dateFromString])
@@ -65,16 +65,18 @@ export const ModalForm: React.FC<{
                             <div className="form__inputs-group">
                                 <div className="form__input-wrapper">
                                     <label>
+                                        <div>From</div>
                                         <input className="form__input-from form__input" type="date"
                                                value={dateFromString}
                                                onChange={dateInputHandler}/>
-                                        From</label>
+                                        </label>
                                 </div>
                                 <div className="form__input-wrapper">
                                     <label>
+                                    <div>To</div>
                                         <input className="form__input-to form__input" type="date" value={dateToString}
                                                onChange={dateInputHandler}/>
-                                        To</label>
+                                        </label>
                                 </div>
                                 <div className="form__select-wrapper">
                                     <div className="form__dates-subtitle">
