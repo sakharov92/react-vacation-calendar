@@ -1,220 +1,226 @@
 td {
-  border: 1px solid #d7d7d7;
+	border: 1px solid #d7d7d7;
 }
 
 .teamInfo span {
-  color: #949494;
-  font-size: 12px;
-  line-height: 18px;
+	color: #949494;
+	font-size: 12px;
+	line-height: 18px;
 }
 
 .user__icon {
-  vertical-align: middle;
-  margin-right: 5px;
+	vertical-align: middle;
+	margin-right: 5px;
 }
 
+
 tbody tr {
-  height: 35px;
+	height: 35px;
 }
 
 tbody:last-child tr {
-  background: #f0f0f0;
+	background: #f0f0f0;
 }
 
 tbody:nth-child(2) .mainRow .teamInfo {
-  background: rgba(155, 153, 255, 0.1);
+	background: rgba(155, 153, 255, 0.1);
 }
+
 tbody:nth-child(3) .mainRow .teamInfo {
-  background: rgba(122, 175, 255, 0.1);
+	background: rgba(122, 175, 255, 0.1);
 }
+
 tbody:nth-child(4) .mainRow .teamInfo {
-  background: rgba(255, 153, 153, 0.1);
+	background: rgba(255, 153, 153, 0.1);
 }
+
 tbody:nth-child(5) .mainRow .teamInfo {
-  background: rgba(255, 167, 104, 0.1);
+	background: rgba(255, 167, 104, 0.1);
 }
 
 .teamInfo {
-  padding: 0px 8px 0px;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 14px;
+	padding: 0px 8px 0px;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 14px;
 }
 
 .teamInfo__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
 }
 
 .teamInfo__name {
-  width: 200px;
-  padding: 0px 10px;
+	width: 200px;
+	padding: 0px 10px;
 }
 
 .teamInfo__block {
-  flex: 0 0 auto;
-  width: fit-content;
+	flex: 0 0 auto;
+	width: fit-content;
 }
 
 .teamInfo__block .fas {
-  margin-top: 0px;
+	margin-top: 0px;
+	color: #949494;
+	margin-right: 10px;
 }
 
 .teamInfo__block .chevronBtn {
-  font-size: 10px;
-  padding: 5px;
+	font-size: 10px;
+	padding: 5px;
 }
 
 .teamInfo__block button {
-  background-color: transparent;
-  padding: 0;
-  margin: 0 9px 0 5px;
+	background-color: transparent;
+	padding: 0;
+	margin: 0 9px 0 5px;
 }
 
 .teamInfo span {
-  color: #949494;
-  font-size: 12px;
-  line-height: 1.5;
+	color: #949494;
+	font-size: 12px;
+	line-height: 1.5;
 }
 
 .percent {
-  padding: 0px 4px;
-  font-size: 12px;
-  line-height: 1.2rem;
-  color: #fff;
-  border-radius: 2px;
-  display: inline-block;
-  min-width: 24px;
-  margin: 0px 13px;
-  text-align: center;
+	padding: 0px 4px;
+	font-size: 12px;
+	line-height: 1.2rem;
+	color: #fff;
+	border-radius: 2px;
+	display: inline-block;
+	min-width: 24px;
+	margin: 0px 13px;
+	text-align: center;
 }
 
 tbody:after {
-  height: 33px;
-  display: table-row;
-  content: "";
+	height: 33px;
+	display: table-row;
+	content: "";
 }
 
 .employeeКRow td:first-child {
-  padding-left: 15px;
-  font-size: 12px;
+	padding-left: 15px;
+	font-size: 12px;
 }
 
 .arrow-show,
 .arrow-hide {
-  display: block;
-  border-top: 1px solid #000;
-  border-right: 1px solid #000;
-  width: 6px;
-  height: 6px;
-  transform: rotate(-45deg);
+	display: block;
+	border-top: 1px solid #000;
+	border-right: 1px solid #000;
+	width: 6px;
+	height: 6px;
+	transform: rotate(-45deg);
 }
 
 .arrow-show {
-  transform: rotate(135deg);
+	transform: rotate(135deg);
 }
 
 tbody:nth-child(2) .vacation-cell_paid:before {
-  background-color: rgb(155, 153, 255);
+	background-color: rgb(155, 153, 255);
 }
 
 tbody:nth-child(2) .vacation-cell_unpaid:before {
-  background-color: rgba(155, 153, 255, 0.1);
+	background-color: rgba(155, 153, 255, 0.1);
 }
 
 tbody:nth-child(2) .vacation-cell_paid:before,
 tbody:nth-child(2) .vacation-cell_unpaid:before {
-  border-color: rgb(155, 153, 255);
+	border-color: rgb(155, 153, 255);
 }
 
 tbody:nth-child(3) .vacation-cell_paid:before {
-  background-color: rgb(122, 175, 255);
+	background-color: rgb(122, 175, 255);
 }
 
 tbody:nth-child(3) .vacation-cell_unpaid:before {
-  background-color: rgba(122, 175, 255, 0.1);
+	background-color: rgba(122, 175, 255, 0.1);
 }
 
 tbody:nth-child(3) .vacation-cell_paid:before,
 tbody:nth-child(3) .vacation-cell_unpaid:before {
-  border-color: rgb(122, 175, 255);
+	border-color: rgb(122, 175, 255);
 }
 
 tbody:nth-child(4) .vacation-cell_paid:before {
-  background-color: rgb(255, 153, 153);
+	background-color: rgb(255, 153, 153);
 }
 
 tbody:nth-child(4) .vacation-cell_unpaid:before {
-  background-color: rgba(255, 153, 153, 0.1);
+	background-color: rgba(255, 153, 153, 0.1);
 }
 
 tbody:nth-child(4) .vacation-cell_paid:before,
 tbody:nth-child(4) .vacation-cell_unpaid:before {
-  border-color: rgb(255, 153, 153);
+	border-color: rgb(255, 153, 153);
 }
 
 tbody:nth-child(5) .vacation-cell_paid:before {
-  background-color: rgb(255, 167, 104);
+	background-color: rgb(255, 167, 104);
 }
 
 tbody:nth-child(5) .vacation-cell_unpaid:before {
-  background-color: rgba(255, 167, 104, 0.1);
+	background-color: rgba(255, 167, 104, 0.1);
 }
 
 tbody:nth-child(5) .vacation-cell_paid:before,
 tbody:nth-child(5) .vacation-cell_unpaid:before {
-  border-color: rgb(255, 167, 104);
+	border-color: rgb(255, 167, 104);
 }
 
 tbody:nth-child(2) .vacation-cell_unpaid.vacation-cell_type-text:after {
-  color: rgb(155, 153, 255);
+	color: rgb(155, 153, 255);
 }
 
 tbody:nth-child(3) .vacation-cell_unpaid.vacation-cell_type-text:after {
-  color: rgb(122, 175, 255);
+	color: rgb(122, 175, 255);
 }
 
 tbody:nth-child(4) .vacation-cell_unpaid.vacation-cell_type-text:after {
-  color: rgb(255, 153, 153);
+	color: rgb(255, 153, 153);
 }
 
 tbody:nth-child(5) .vacation-cell_unpaid.vacation-cell_type-text:after {
-  color: rgb(255, 167, 104);
+	color: rgb(255, 167, 104);
 }
 
 tbody:nth-child(2) .employeeКRow,
 tbody:nth-child(2) .mainRow {
-  border-left: 3px solid rgb(155, 153, 255);
+	border-left: 3px solid rgb(155, 153, 255);
 }
 
 tbody:nth-child(3) .employeeКRow,
 tbody:nth-child(3) .mainRow {
-  border-left: 3px solid rgb(122, 175, 255);
+	border-left: 3px solid rgb(122, 175, 255);
 }
 
 tbody:nth-child(4) .employeeКRow,
 tbody:nth-child(4) .mainRow {
-  border-left: 3px solid rgb(255, 153, 153);
+	border-left: 3px solid rgb(255, 153, 153);
 }
 
 tbody:nth-child(5) .employeeКRow,
 tbody:nth-child(5) .mainRow {
-  border-left: 3px solid rgb(255, 167, 104);
+	border-left: 3px solid rgb(255, 167, 104);
 }
 
 tbody:nth-child(2) .percent {
-  background-color: rgb(155, 153, 255);
+	background-color: rgb(155, 153, 255);
 }
 
 tbody:nth-child(3) .percent {
-  background-color: rgb(122, 175, 255);
+	background-color: rgb(122, 175, 255);
 }
 
 tbody:nth-child(4) .percent {
-  background-color: rgb(255, 153, 153);
+	background-color: rgb(255, 153, 153);
 }
 
 tbody:nth-child(5) .percent {
-  background-color: rgb(255, 167, 104);
+	background-color: rgb(255, 167, 104);
 }
